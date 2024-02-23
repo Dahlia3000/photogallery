@@ -117,3 +117,26 @@ p{
 p + p{
     margin-bottom: 1em;
 }
+
+.photos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    width: 28em;
+}
+
+.photos p{
+    position: relative;
+    justify-content: center;
+    display: flex;
+    top: -20px;
+    margin: 0px;
+}
+
+.photos p:nth-child(odd){
+    top: 20em;
+   
+}
