@@ -229,4 +229,30 @@ img{
 
 #contact p{
     color: white;
+    text-align: center;
 }
+
+label{
+    color: white;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+input{
+    font-size: 1em;
+}
+
+input::placeholder{
+    color: #007d7b;
+    text-transform: uppercase;
+}
+
+input[type="submit"]{
+    background-color: #007d7b;
+    width: 20em;
+    border-radius: 2em;
+    margin: 1em 5.5em;
+    color: white;
+    text-transform: uppercase;
+}
+
