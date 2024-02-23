@@ -124,19 +124,109 @@ p + p{
     align-items: center;
     justify-content: center;
 }
+
+.photos p{
+    font-size: 1em;
+}
 img{
     width: 28em;
 }
 
-.photos p{
+.photos p:nth-child(2),.photos p:nth-child(6), .photos p:nth-child(14), .photos p:nth-child(22) {
     position: relative;
     justify-content: center;
     display: flex;
-    top: -20px;
+    top: -30px;
     margin: 0px;
+    color: white;
+    text-transform: uppercase;
 }
 
-.photos p:nth-child(odd){
-    top: 20em;
-   
+.photos p:nth-child(10){
+    position: relative;
+    justify-content: center;
+    display: flex;
+    top: -660px;
+    margin: 0px;
+    color: black;
+    text-transform: uppercase;
+}
+
+.photos p:nth-child(4) {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    top: -285px;
+    margin: 0px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.photos p:nth-child(8) {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    top: -655px;
+    margin: 0px;
+    color: black;
+    text-transform: uppercase;
+}
+
+.photos p:nth-child(12) {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    top: -30px;
+    margin: 0px;
+    color: black;
+    text-transform: uppercase;
+}
+
+.photos p:nth-child(16){
+    position: relative;
+    justify-content: center;
+    display: flex;
+    top: -285px;
+    margin: 0px;
+    color: black;
+    text-transform: uppercase;
+}
+
+.photos p:nth-child(18), .photos p:nth-child(20){
+    position: relative;
+    justify-content: center;
+    display: flex;
+    top: -285px;
+    margin: 0px;
+    color: black;
+    text-transform: uppercase;
+}
+
+.photos p:nth-child(22){
+    position: relative;
+    justify-content: center;
+    display: flex;
+    top: -285px;
+    margin: 0px;
+    color: black;
+    text-transform: uppercase;
+}
+
+.photos p:nth-child(24){
+    position: relative;
+    justify-content: center;
+    display: flex;
+    top: -285px;
+    margin: 0px;
+    color: white;
+    text-transform: uppercase;
+}
+
+#contact h2{
+    color: white;
+    margin-top: 0.25em;
+}
+
+#contact p{
+    color: white;
 }
