@@ -58,7 +58,8 @@ html{
 }
 
 body{
-    margin: auto 2em;
+    margin: auto;
+    max-width: 500px;
 }
 
 h1{
@@ -338,6 +339,7 @@ small{
     }
 
     body{
+        max-width: 900px;
         width: 100%;
     }
 
@@ -355,6 +357,11 @@ small{
         grid-template-columns: 1fr;
         justify-content: center;
     }
+
+    #gallery p{
+        padding-left: 0.5em;
+    }
+
     img{
         width: 24em;
     }
@@ -465,6 +472,7 @@ small{
 
     body{
         width: 100%;
+        max-width: 1300px;
     }
 
     nav ul{
