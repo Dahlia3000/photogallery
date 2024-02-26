@@ -48,7 +48,7 @@ table {
 
 /* END OF CSS RESET*/
 
-* {
+main {
     width: 485px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -260,6 +260,11 @@ img{
     text-transform: uppercase;
 }
 
+#contact{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
 #contact h2{
     color: white;
     margin-top: 0.25em;
@@ -270,18 +275,30 @@ img{
     text-align: center;
 }
 
-input, label{
-    display: block;
-    justify-self: center;
+fieldset div{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
 }
+
+legend{
+    visibility: hidden;
+}
+
 label{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-self: start;
     color: white;
     font-size: 1em;
     text-transform: uppercase;
-    margin-left: 1em;
+    margin-left: 3em;
 }
 
 input{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-self: center;
     font-size: 1em;
     margin-bottom: 1em;
     width: 25em;
@@ -316,6 +333,10 @@ small{
 
 @media screen and (min-width:880px) {
 
+    main{
+        width: 880px;
+    }
+
     body{
         width: 100%;
     }
@@ -323,23 +344,35 @@ small{
     h1{
         text-align: left;
     }
+
+    nav ul{
+        justify-content: center;
+        margin-right: -1em;
+    }
     
+    #gallery{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
     img{
-        width: 12em;
+        width: 24em;
     }
 
     .photos{
         display: grid;
-        grid-template-columns: 200px 200px;
-        width: 440px;
+        grid-template-columns: 400px 400px;
+        width: 880px;
         margin: 0.75em 0px;
         justify-content: center;
+        align-items: start;
         align-self: center;
     }
 
     figure{
         display: grid;
-        width: 220px;
+        width:24em;
+        height: auto;
     }
 
     img:nth-child(odd){
@@ -354,5 +387,110 @@ small{
 
     figcaption{
         width: 200px;
+        text-align: center;
+    }
+
+    #chile {
+       top: 14em;
+       left: 5em;
+    }
+    
+    #guatemala {
+        left: 6em;
+    }
+    
+    #hawaii{
+        top: 14em;
+        left: 6em;
+    }
+    
+    #iran {
+        left: 6em;
+    }
+    
+    #ireland{
+       top: -35em;
+       left: 6em;
+    }
+    
+    #italy {
+       top: 34em;
+       left: 6em;
+    }
+    
+    #moab{
+        top: 14em;
+        left: 6em;
+    }
+    #rocky{
+        top: 1em;
+        left: 5em;
+        width: 220px;
+    }
+    
+    #switzerland{
+        top: 1em;
+        left: 6em;
+    }
+    
+    #uk{
+       top: 1em;
+       left: 6em;
+    }
+    
+    #usa{
+        top: 1em;
+        left: 6em;
+    }
+    
+    #wyoming{
+       top: 1em;
+       left: 6em;
+    }
+
+    label{
+        margin-left: 8em;
+    }
+
+    input{
+        width: 40em;
+    }
+}
+
+
+@media screen and (min-width:1300px){
+    main{
+        width: 1300px;
+    }
+
+    body{
+        width: 100%;
+    }
+
+    nav ul{
+        justify-content: end;
+        margin-right: -2em;
+    }
+
+    #gallery p{
+        padding-left: 0.5em;
+    }
+
+    .photos{
+        display: grid;
+        grid-template-columns: 400px 400px 400px;
+        width: 1300px;
+        margin: 0.75em 0px;
+        justify-content: center;
+        align-items: start;
+        align-self: center;
+    }
+
+    input{
+        width: 65em;
+    }
+
+    label{
+        margin-left: 9em;
     }
 }
